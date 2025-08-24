@@ -58,11 +58,31 @@ f16 = int(input())
 for i in range(10):
     print((f16 + i) % 10)
 
-t1, t2 = map(int, input().split())
-diff = t2 - t1
+f17, f18 = map(int, input().split())
+diff = t18 - f17
 if diff > 0:
     print(f"+{diff}")
 elif diff == 0:
     print(0)
 else:
     print(diff)
+
+f19 = input().strip()
+
+if f19 in {"C","E","F","G","H","I","J","K","L","M","N","S","T","U","V","W","X","Y","Z"}:
+    print(0)
+elif f19 in {"A","D","O","P","Q","R"}:
+    print(1)
+elif f19 == "B":
+    print(2)
+
+f20 = int(input())
+
+if f20 < 30:
+    print("quiet")
+elif f20 < 50:
+    print("normal")
+elif f20 < 70:
+    print("noisy")
+else:
+    print("very noisy")
